@@ -56,11 +56,6 @@ div.result {
   cursor: pointer;
 }
 
-.btn-num:hover,
-.operator:hover {
-  background-color: rgb(85, 84, 84);
-}
-
 .count-wrap {
   flex-basis: 0;
   flex-grow: 1;
@@ -81,5 +76,9 @@ div.result {
 @media (min-width: 576px) {
   .container {
     max-width: 500px;
+  }
+  .btn-num:hover,
+  .operator:hover {
+    background-color: rgb(85, 84, 84);
   }
 }
