@@ -56,6 +56,11 @@ div.result {
   cursor: pointer;
 }
 
+.btn-num:hover,
+.operator:hover {
+  background-color: rgb(85, 84, 84);
+}
+
 .count-wrap {
   flex-basis: 0;
   flex-grow: 1;
