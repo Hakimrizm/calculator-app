@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gray: rgb(132, 130, 130);
+  --gray-darker: rgb(85, 84, 84);
+  --white-darker: rgb(230, 225, 225);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: lightblue;
 }
 
 .container {
-  border: 1px solid black;
   max-width: 300px;
   margin: 50px auto;
   border-radius: 5px;
@@ -19,8 +24,7 @@ body {
 }
 
 .input {
-  border: 1px solid white;
-  background-color: rgb(230, 225, 225);
+  background-color: var(--white-darker);
   height: 180px;
   position: relative;
 }
@@ -38,6 +42,7 @@ div.result {
 
 .calculate {
   display: flex;
+  margin-top: 2px;
 }
 
 .calculate-wrap {
@@ -49,10 +54,11 @@ div.result {
 }
 
 .btn-num {
-  background-color: rgb(132, 130, 130);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--gray);
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -66,10 +72,11 @@ div.result {
 }
 
 .operator {
-  background-color: rgb(132, 130, 130);
+  background-color: var(--gray);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -79,6 +86,6 @@ div.result {
   }
   .btn-num:hover,
   .operator:hover {
-    background-color: rgb(85, 84, 84);
+    background-color: var(--gray-darker);
   }
 }
